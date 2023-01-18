@@ -77,4 +77,4 @@ class Attribute:
 
             Formula is ([score] - 10) / 2 rounding down
         """
-        return (self.get_current_value() - 10) / 2
+        return int((self.get_current_value() - 10) / 2)
