@@ -78,3 +78,14 @@ class Attribute:
             Formula is ([score] - 10) / 2 rounding down
         """
         return int((self.get_current_value() - 10) / 2)
+
+    
+    def to_json(self):
+        """
+            Used to save an attribute when saving to a file.
+        """
+        return {
+            "base_value": self._base_value,
+            "damage": self._attribute_damage,
+            "drain": self._attribute_drain
+        }

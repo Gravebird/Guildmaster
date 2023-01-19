@@ -1,0 +1,32 @@
+{
+    "strength": {
+        "base_value": 13,
+        "damage": 0,
+        "drain": 0
+    },
+    "dexterity": {
+        "base_value": 11,
+        "damage": 0,
+        "drain": 0
+    },
+    "constitution": {
+        "base_value": 9,
+        "damage": 0,
+        "drain": 0
+    },
+    "intelligence": {
+        "base_value": 9,
+        "damage": 0,
+        "drain": 0
+    },
+    "wisdom": {
+        "base_value": 12,
+        "damage": 0,
+        "drain": 0
+    },
+    "charisma": {
+        "base_value": 6,
+        "damage": 0,
+        "drain": 0
+    }
+}
