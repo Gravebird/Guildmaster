@@ -77,7 +77,10 @@ class Attribute:
 
             Formula is ([score] - 10) / 2 rounding down
         """
-        return int((self.get_current_value() - 10) / 2)
+        if self.get_current_value() > 9:
+            return int((self.get_current_value() - 10) / 2)
+        else:
+            return int((self.get_current_value() - 11) / 2)
 
     
     def to_json(self):
