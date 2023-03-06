@@ -11,14 +11,15 @@ class Attribute:
         Wisdom - Affects mana points
         Charisma - Affects how hard it is to resist spells
     """
+
+    list_of_possible_attributes = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
+
     def __init__(self, attribute_name_, base_value_, damage_, drain_):
 
-        self._list_of_possible_attributes = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
-
-        if self._list_of_possible_attributes.count(attribute_name_) == 0:
+        if Attribute.list_of_possible_attributes.count(attribute_name_) == 0:
             # Attribute must have been spelled incorrectly
             # Ideally could use an enumerated type for this
-            raise ValueError(f'{attribute_name_} does not exist in list [{self._list_of_possible_attributes}] - Likely a typo')
+            raise ValueError(f'{attribute_name_} does not exist in list [{Attribute.list_of_possible_attributes}] - Likely a typo')
         
         self._attribute_name = attribute_name_
         self._base_value = base_value_
